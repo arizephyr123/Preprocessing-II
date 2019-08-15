@@ -1,10 +1,15 @@
-.home {
+// Main Header: Use the `home-page.less` file for the header styling.
 
+
+.home {
+//added border below
+border-top: 2px dashed @navigation-border;
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
    
     
@@ -52,6 +57,10 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    button{
+      .btn-mixin(5px, 10px);
+    }
 
     .destination {
       width: 30%;
