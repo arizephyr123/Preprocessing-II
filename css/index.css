@@ -172,7 +172,15 @@ nav {
   margin: 30px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px dashed #C0C0C0;
+  align-items: center;
+}
+nav h1 {
+  width: 55%;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -233,11 +241,12 @@ nav {
 .home .content-pick button {
   background-color: #17A2B8;
   color: #FFFFFF;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 80%;
   padding: 10px;
   cursor: pointer;
   text-align: center;
+  font-size: 1.5rem;
 }
 .home .content-pick button:hover {
   background-color: #148ea1;
