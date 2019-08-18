@@ -1,3 +1,7 @@
+// Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`.  Use the `variables.less` file to house your variables.
+// * [ ] Review the [mobile design file](design-files/fun-bus-mobile.png). You will see several design updates that need updating. 
+// * [ ] Match the design file at `500px` as well as you can 
+
 
 // Color assignments 
 @font-color: @shark;
@@ -12,3 +16,25 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+//mobile escape
+@mobile: ~"(max-width:500px)";
+
+
+
+// @tablet: ~"(min-width: 500px)";
+// @desktop: ~"(min-width: 800px)";
+
+// h1 {
+//   font-size: 2rem;
+//   padding: 10px;
+
+//   @media @tablet {
+//     padding: 20px;
+//   }
+
+//   @media @desktop {
+//     font-size: 1.8rem;
+//     padding: 0 10px;
+//   }
+// }

@@ -1,1 +1,49 @@
-// Navigation Styles here
+// Navigation Styles here/
+//Navigation: Use the `navigation.less` file for all your navigation styling
+
+nav {
+  border: 30px;
+  padding: 30px 130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed @navigation-border;
+
+  @media @mobile {
+    
+    padding: 0px;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h1 {
+    width: 55%;
+  }
+  @media @mobile {
+    
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45vw;
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: @shark;
+      justify-content: space-between;
+      padding: 1.5rem;
+
+    
+    }
+  }
+}
+

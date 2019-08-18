@@ -1,1 +1,18 @@
 // Mixins in here
+
+// Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
+
+.btn-mixin(@radius, @padding){
+    background-color:@eastern-blue;
+    color: @white;
+    border-radius: @radius;
+    width: 80%; 
+    padding: @padding;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+
+    &:hover{
+        background-color: darken(@eastern-blue, 5%)
+    }
+}
